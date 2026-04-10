@@ -9,8 +9,6 @@ This repository packages the **Part 1 VO result** on AMtown02 in assignment-styl
 - visualization figures used for report presentation
 - full optimization history (v1–v4) for reproducibility
 
-The Part 1 output trajectory (`CameraTrajectory.txt`) is the direct input to Part 2 (3DGS/OpenSplat).
-
 ## Key Results (AMtown02 — v2 Final Submission)
 
 | Metric | Value | Description |
@@ -205,7 +203,7 @@ evo_ape tum ground_truth.txt CameraTrajectory.txt --align --correct_scale --t_ma
 ## Repository Structure
 
 ```
-Hand_off/
+AAE5303_Group_Project_VO/
 ├── README.md                            # This file
 ├── .gitignore
 ├── configs/
