@@ -1,6 +1,6 @@
 {
   "group_name": "GOGOGO",
-  "project_private_repo_url": "NA",
+  "project_private_repo_url": "https://github.com/SeanHOU123/AAE5303_Group_Project_VO",
   "metrics": {
     "ate_rmse_m": 10.65,
     "rpe_trans_drift_m_per_m": 1.41,
