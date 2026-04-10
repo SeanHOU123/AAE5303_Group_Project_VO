@@ -1,0 +1,37 @@
+{
+  "group_name": "GOGOGO",
+  "dataset": "AMtown02",
+  "framework": "ORB-SLAM3",
+  "mode": "Monocular Visual Odometry",
+  "version": "v2",
+  "evaluation": {
+    "alignment": "Sim(3)",
+    "correct_scale": true,
+    "t_max_diff_s": 0.1,
+    "rpe_delta_m": 10.0
+  },
+  "trajectory_stats": {
+    "estimated_poses": 3776,
+    "ground_truth_poses": 3750,
+    "matched_poses": 3544,
+    "completeness_pct": 94.506667
+  },
+  "metrics": {
+    "ate_rmse_m": 10.646227,
+    "rpe_trans_drift_m_per_m": 1.4069,
+    "rpe_rot_drift_deg_per_100m": 42.67
+  },
+  "config": {
+    "ORBextractor.nFeatures": 5000,
+    "ORBextractor.scaleFactor": 1.2,
+    "ORBextractor.nLevels": 12,
+    "ORBextractor.iniThFAST": 8,
+    "ORBextractor.minThFAST": 3,
+    "Camera.RGB": 0,
+    "Camera.fps": 10,
+    "CLAHE": true,
+    "playback_rate": 0.75
+  },
+  "docker_image": "liangyu99/orbslam3_ros1:latest",
+  "bag_file": "AMtown02.bag"
+}

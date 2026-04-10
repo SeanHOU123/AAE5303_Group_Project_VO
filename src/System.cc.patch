@@ -1,0 +1,16 @@
+--- a/src/System.cc
++++ b/src/System.cc
+@@ -569,7 +569,7 @@
+ void System::SaveTrajectoryTUM(const string &filename)
+ {
+     cout << endl << "Saving camera trajectory to " << filename << " ..." << endl;
+-    if(mSensor==MONOCULAR)
++    if(false && mSensor==MONOCULAR)
+     {
+         cerr << "ERROR: SaveTrajectoryTUM cannot be used for monocular." << endl;
+         return;
+
+Explanation:
+ORB-SLAM3 blocks SaveTrajectoryTUM() for monocular mode by default,
+only allowing SaveKeyFrameTrajectoryTUM(). The leaderboard requires
+CameraTrajectory.txt (full-frame trajectory), so this check is bypassed.
