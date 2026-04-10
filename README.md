@@ -101,14 +101,6 @@ Four versions were tested to converge on the optimal configuration:
 
 Full optimization log: `docs/EXPERIMENT_LOG.md`
 
-## Part 1 to Part 2 Handoff
-
-This repository is Part 1 only, but its output is directly used by Part 2:
-
-- Part 1 provides camera poses (`CameraTrajectory.txt`)
-- Part 2 (OpenSplat) consumes poses + images to reconstruct 3D scene
-
-That is the core technical linkage between assignment sections.
 
 ## Reproducibility
 
